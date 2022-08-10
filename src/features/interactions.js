@@ -12,6 +12,8 @@ export function getMousePosition(event, ViewerDOM) {
 }
 
 export function onMouseDown(event, ViewerDOM, tool, value, props, coords = null) {
+  alert("TEST");
+
   const {x, y} = coords || getMousePosition(event, ViewerDOM)
 
   let nextValue = value;
